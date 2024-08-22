@@ -8,13 +8,13 @@ import markdown
 app = Flask(__name__)
 app.secret_key = "64472475857858757857832109767876"
 count = 0
-db = firestore.Client()
+# db = firestore.Client()
 # doc_ref = ""
 #----------------------------------------------Flask config ends-------------------------------------------------------------
 
 @app.route('/')
 def home_page():
-    return render_template("index.html")
+    return "<h1>welcome to leonsi</h1>"
 
 #------------------------------------------------MainChatbot-----------------------------------------------------------
 @app.route('/api/get')
