@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 #----------------------------------------------Flask config-------------------------------------------------------------
-app = Flask(__name__)
+
 app.secret_key = "64472475857858757857832109767876"
 count = 0
 # db = firestore.Client()
