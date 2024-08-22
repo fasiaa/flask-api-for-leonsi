@@ -48,6 +48,6 @@ six==1.16.0
 tqdm==4.66.5
 typing_extensions==4.12.2
 uritemplate==4.1.1
-urllib3==2.2.2
+urllib3
 Werkzeug==3.0.3
 google-cloud-firestore==2.17.2
