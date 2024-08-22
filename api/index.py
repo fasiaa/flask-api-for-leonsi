@@ -136,6 +136,9 @@ def login_page():
         except Exception as e:
             print(e) 
             return jsonify({'response':"Incorrect Email or Password"})
+
+    if request.method == "GET":
+        return jsonify({"response": "Enter username or password"})
     
 @app.route('/api/logout')
 def logout():
