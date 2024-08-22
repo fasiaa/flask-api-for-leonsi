@@ -148,7 +148,7 @@ def logout():
     if 'user' in session:
         session.pop('user')
     
-    return redirect('/login')
+    return jsonify({"response": "Logout Successful"})
 
 @app.route('/api/user-details')
 def user_details():
