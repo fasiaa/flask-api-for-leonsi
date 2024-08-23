@@ -137,8 +137,7 @@ def login_page():
             return jsonify({'response': 'Login successful'}), 200
 
         except Exception as e:
-            print(e) 
-            return jsonify({'response':"Incorrect Email or Password"})
+            return jsonify({'response': e})
 
     if request.method == "GET":
         return jsonify({"response": "Enter username or password"})
