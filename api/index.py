@@ -90,7 +90,7 @@ def get_character_description():
                 return jsonify({'error': 'Character name is required'}), 400
 
             description = generate_character_description(character_name)
-            return jsonify({'response': format_markdown(description)}), 200
+            return jsonify({'response': description}), 200
 
         except Exception as e:
             return jsonify({'error': str(e)}), 500
