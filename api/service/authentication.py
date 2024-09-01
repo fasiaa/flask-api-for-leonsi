@@ -28,6 +28,7 @@ def sign_up(email, password):
 
 def get_user_details():
     user = auth.get_account_info(user['idToken'])
+    return user
 
 def reset_password(email):
     auth.send_password_reset_email(email)
