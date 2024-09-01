@@ -134,7 +134,7 @@ def login_page():
             session['user'] = email 
             # global doc_ref
             # doc_ref = db.collection('users').document(authentication.get_user_details())
-            return jsonify({'response': 'Login successful', "userid": authentication.get_user_details()}), 200
+            return jsonify({'response': 'Login successful'}), 200
 
         except Exception as e:
             return jsonify({'response': e})
